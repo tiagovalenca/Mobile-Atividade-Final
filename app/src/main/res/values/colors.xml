@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#2196f3</color>
+    <color name="colorAccent">#11C76F</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+
+    <color name="background">#FBFBFB</color>
+    <color name="cardBg">#cc2196f3</color>
+    <color name="emptyListText">@color/black</color>
+</resources>

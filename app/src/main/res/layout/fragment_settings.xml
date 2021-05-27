@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+
+    <TextView
+        android:id="@+id/tempUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temparature_unit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgTempUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tempUnit" >
+
+        <RadioButton
+            android:id="@+id/rbCelsius"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:text="C°" />
+
+        <RadioButton
+            android:id="@+id/rbFahr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F°" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description_language"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/rgTempUnit"
+        tools:layout_editor_absoluteX="110dp" />
+
+    <RadioGroup
+        android:id="@+id/rgLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lang" >
+
+        <RadioButton
+            android:id="@+id/rbEn"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lan_en" />
+
+        <RadioButton
+            android:id="@+id/rbPt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lan_pt" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="222dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/button_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgLang" />
+</androidx.constraintlayout.widget.ConstraintLayout>

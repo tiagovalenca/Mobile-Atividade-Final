@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Weather</string>
+    <string name="title_search">Search</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_settings">Settings</string>
+    <string name="lan_en">English (EN)</string>
+    <string name="lan_pt">Portuguese (PT)</string>
+    <string name="temparature_unit">Temperature Unit</string>
+    <string name="description_language">Description Language</string>
+    <string name="button_save">Save</string>
+    <string name="button_search">Search</string>
+    <string name="search_text">Type a City</string>
+    <string name="api_key" translatable="false">66666e8ed2d55e8800f72076ea607a1e</string>
+</resources>
